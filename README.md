@@ -106,7 +106,7 @@ const removeKey = (obj, key) => {
 const combine = (obj1, obj2) => ({ ...obj1, ...obj2 });
 ```
 + combine({ b: 3, c: 4 }, { a: 1, b: 2 }); 
-    -returns `{b: 2, c: 4, a: 1}`
+    - returns `{b: 2, c: 4, a: 1}`
 + combine({ d: 3, c: 4 }, { a: 1, b: 2 }); 
     - returns `{d: 3, c: 4, a: 1, b: 2}`
 + combine({name:"Bob", job: "no job"},{name:"Alice",job: "good job"});
