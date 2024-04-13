@@ -54,7 +54,7 @@ const removeRandom = items => {
     return [...items.slice(0, random), ...items.slice(random + 1)];
 }
 ```
-+ console.log(removeRandom(\[0,1,2,3,4,5,6,7,8,9,10,1000,2000,2543,10246])); 
++ removeRandom(\[0,1,2,3,4,5,6,7,8,9,10,1000,2000,2543,10246]); 
     - returns `(14) [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 1000, 2000, 2543, 10246]`
 
 ## extend
@@ -62,7 +62,7 @@ const removeRandom = items => {
 ```javascript
 const extend = (array1, array2) => [...array1, ...array2];
 ```
-+ console.log(extend(\[0,1,2,3,4,5,6],\[7,8,9,10,1000,2000,2543,10246])); 
++ extend(\[0,1,2,3,4,5,6],\[7,8,9,10,1000,2000,2543,10246]); 
     - returns `(15) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1000, 2000, 2543, 10246]`
 
 ## addKeyVal
@@ -78,7 +78,7 @@ or
 ```javascript
 const addKeyVal = (obj, key, val) => ({ ...obj, [key]: val });
 ```
-+ console.log(addKeyVal([{name: "none", job: "two"},{name: "some", job: "three"},{name: "all", job:"four"}], "title", "instructor"));
++ addKeyVal([{name: "none", job: "two"},{name: "some", job: "three"},{name: "all", job:"four"}], "title", "instructor");
     - returns `{0: {…}, 1: {…}, 2: {…}, title: 'instructor'}`
 
 ## removeKey
@@ -97,7 +97,7 @@ const removeKey = (obj, key) => {
 }
 ```
 
-+ console.log(removeKey({name: "none", job: "two"}, "job")); 
++ removeKey({name: "none", job: "two"}, "job"); 
     - returns `{name: 'none'}`
 
 ## Combine 
